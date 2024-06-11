@@ -1,0 +1,62 @@
+@use '../../style' as s;
+
+.content {
+    display: flex;
+    flex-direction: column;
+    padding-top: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+    gap: 20px;
+}
+.header {
+    font-size: 24;
+    font-weight: bold;
+}
+
+.back-button {
+    @include s.click;
+}
+.page_title {
+    font-size: 24px;
+    font-weight: bold;
+}
+.page_section {
+    display: grid;
+    grid-template-rows: auto 1fr;
+    gap: 20px;
+}
+
+.button {
+    color: aliceblue;
+    background: #F46F17;
+   padding: 15px 10px;
+   border-radius: 10px;
+width: 390px;
+
+
+   @include s.click;
+
+   &:hover {
+    opacity: 0.3;
+   }
+}
+.alert {
+    border: 1px solid transparent;
+    border-radius: 10px;
+    &--error {
+        border-color: red;
+        padding: 15px 10px;
+       text-align: center;
+    }
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.form__error {
+    color: red;
+    font-size: 12px;
+    display: none;
+}

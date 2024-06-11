@@ -1,0 +1,17 @@
+<div class="content">
+    {{> back-button }}
+    <form class="page_section">
+        <h1 class="page_title">Реєстрація</h1>
+        <div class="form">
+            {{> field action = "signupForm.change" label="Ел адреса" type="email" name="email" placeholder="Ваш email"}}
+            <span name="email" class="form__error">Помилка</span>
+            {{> field-password action = "signupForm.change" label="Пароль" type="password" name="password"
+            placeholder="Введіть пароль"}}
+            <span name="email2" class="form__error">Помилка</span>
+            {{> field-checkbox action = "signupForm.change" label="Ви погоджуєтеся з правилами сервіса"}}
+        </div>
+
+        <button onclick="signupForm.submit()" class="button" type="button">Зареєструватися</button>
+        <span class="alert alert--error">Увага помилка!</span>
+    </form>
+</div>

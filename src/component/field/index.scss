@@ -1,0 +1,36 @@
+@use '../../style' as s;
+
+.field {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+
+    .field__label {
+        font-size: 16px;
+        color: gray;
+    }
+
+    .field__input {
+        border: 1px solid;
+        color: gray;
+        background-color: white;
+        font-size: 12px;
+border-radius: 10px;
+padding: 15px 10px;
+        &::placeholder {
+            color: s.color(light);
+        }
+
+        &:hover {
+            border-color: black;
+        }
+&:focus {
+    border-color: #F46F17;
+}
+      &--error {
+        border-color: red !important;
+      }
+    }
+
+   
+}

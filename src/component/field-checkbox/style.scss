@@ -1,0 +1,11 @@
+@use '../../style' as s;
+
+.field__checkbox {
+    display: flex;
+border: 1px solid;
+color: gray;
+}
+.field__name {
+    font-size: 14px;
+   
+}

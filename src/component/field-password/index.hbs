@@ -1,0 +1,8 @@
+<div class="field field_password">
+    <label for="{{name}}" class="field field__label">{{label}}</label>
+
+    <input oninput="signupForm.change(this.name, this.value)" type="password" class=" field field__input"
+        name="{{name}}" value="{{value}}" placeholder="{{placeholder}}">
+    <span onclick="fieldPassword.toggle(this)" class="field_icon"></span>
+
+</div>
